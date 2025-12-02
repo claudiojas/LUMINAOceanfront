@@ -1,4 +1,5 @@
 import { Home, LayoutGrid, Image, MessageCircle } from "lucide-react";
+import { cn } from "../lib/utils";
 
 const navItems = [
   { icon: Home, label: "Início", href: "#inicio" },
@@ -17,7 +18,7 @@ const MobileBottomNav = () => {
             href={item.href}
             className="flex flex-col items-center gap-1 p-2 text-primary-foreground/70 transition-colors hover:text-gold"
           >
-            <item.icon className="h-5 w-5" strokeWidth={1.5} />
+            <item.icon className={cn("h-5 w-5", item.label === "WhatsApp" && "mt-0.5")} strokeWidth={1.5} />
             <span className="text-[10px] uppercase tracking-wider">
               {item.label}
             </span>
