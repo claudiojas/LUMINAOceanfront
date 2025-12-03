@@ -1,8 +1,8 @@
 import { useState, useRef } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
 import { Maximize2, BedDouble, Car } from "lucide-react";
-import gardenPlan from "@/assets/buildingplan/garden.png";
-import penthousePlan from "@/assets/buildingplan/penhouse.png";
+import gardenPlan from "@/assets/buildingplan/garden.webp";
+import penthousePlan from "@/assets/buildingplan/penhouse.webp";
 
 const plans = [
   {

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import livingRoom from "@/assets/living-room.png";
+import livingRoom from "@/assets/living-room.webp";
 
 const ConceptSection = () => {
   const ref = useRef(null);
