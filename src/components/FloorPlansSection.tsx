@@ -1,33 +1,33 @@
 import { useState, useRef } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
 import { Maximize2, BedDouble, Car } from "lucide-react";
-import poolView from "@/assets/pool-view.png";
-import buildingExterior from "@/assets/building-exterior.png";
+import gardenPlan from "@/assets/buildingplan/garden.png";
+import penthousePlan from "@/assets/buildingplan/penhouse.png";
 
 const plans = [
   {
     id: "garden",
     name: "Apartamento Garden",
-    image: poolView,
+    image: gardenPlan,
     details: {
       area: "287 m²",
       suites: "4 Suítes",
       parking: "4 Vagas",
     },
     description:
-      "Integração perfeita entre interno e externo, com jardim privativo e acesso direto à área de lazer.",
+      "Um oásis particular onde a sofisticação encontra a natureza. Desfrute de um jardim privativo e da brisa do mar, com acesso direto às exclusivas áreas de lazer do condomínio.",
   },
   {
     id: "penthouse",
     name: "Penthouse",
-    image: buildingExterior,
+    image: penthousePlan,
     details: {
       area: "520 m²",
-      suites: "5 Suítes",
+      suites: "4 Suítes",
       parking: "6 Vagas",
     },
     description:
-      "O ápice do luxo com terraço panorâmico, piscina privativa e vista 360° do oceano.",
+      "A coroação do luxo em uma residência suspensa. Com um terraço panorâmico, piscina privativa e uma vista espetacular de 360° para o oceano, esta é a definição de uma vida extraordinária.",
   },
 ];
 
